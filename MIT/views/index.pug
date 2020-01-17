@@ -1,5 +1,11 @@
-extends layout
 
+extends layout
 block content
-  h1= title
-  p Welcome to #{title}
+  header
+    h1 #{title} <!-- questo title va a prendere il title di index.js quindi poeti --> <!-- quello sotto è il nostro vettore di oggetti people: people_file.persone -->
+  hr
+  br
+  article
+    each m in mit
+      div 
+        h1 ciaooo
