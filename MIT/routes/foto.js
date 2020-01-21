@@ -6,12 +6,12 @@ const mit = require('../mit.json');
 router.get('/:id', function(req, res, next) {
  let mit2 = mit.results.find(p => p.id == req.params.id)
     if (typeof mit2 == 'undefined') {  
-    return next(createError(300, 'PERSONA NON TROVATA AHAH')); 
+    return next(createError(404, 'ID non corretto')); 
  }
  else
  {
    res.render ('foto',{
-            title : `${mit.description}`,
+            title : `${mit2.alt_description}`,
             mit2, 
         }) ; ;
     }

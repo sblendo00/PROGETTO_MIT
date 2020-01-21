@@ -4,7 +4,7 @@ const mit_file = require ('../mit.json')
 
 router.get('/', function(req, res) {
     res.render('index', {
-        title: 'PHOTO', 
+        title: 'ALL PHOTO OF LONDON', 
         mit: mit_file.results
     });
 });

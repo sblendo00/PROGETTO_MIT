@@ -2,7 +2,7 @@
 extends layout
 block content
   header
-    h1 #{title} <!-- questo title va a prendere il title di index.js quindi poeti --> <!-- quello sotto è il nostro vettore di oggetti people: people_file.persone -->
+    h1 #{title}
   hr
   br
   article
@@ -10,4 +10,8 @@ block content
       div 
         a(href=`/foto/${m.id}`) 
           img(src=`${m.urls.small}`)
-        h2 #{mit.likes}  
+          br
+          br
+          br
+          br
+      
