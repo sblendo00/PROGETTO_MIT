@@ -4,13 +4,15 @@ var request = require("request");
 const fs = require('fs');
 
 
-var url = "https://api.unsplash.com/search/photos?query=london&client_id=d4dcf0dfc3caf8747f06bb8a9251d39d5ecba6c0b0edcb5b8382f3f49a33463a"
+var url = "https://api.unsplash.com/search/photos?query=milan&client_id=d4dcf0dfc3caf8747f06bb8a9251d39d5ecba6c0b0edcb5b8382f3f49a33463a"
 
 router.get('/', function(req,res,next ) {
     
     request({
     url: url,
     json: true
+
+    //req.body => PRENDE IL PARAMETRO PASSATO DA UNA FORM IN PUG
     
 }, function (error, response, body) {
     
