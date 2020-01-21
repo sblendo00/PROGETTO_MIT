@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
-const mit_file = require ('../mit.json') // contiene tutto il json 
-/* GET home page. */
+const mit_file = require ('../mit.json') 
+
 router.get('/', function(req, res) {
     res.render('index', {
-        title: 'Ciao', 
+        title: 'PHOTO', 
         mit: mit_file.results
     });
 });

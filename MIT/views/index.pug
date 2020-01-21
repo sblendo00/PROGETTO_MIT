@@ -8,4 +8,6 @@ block content
   article
     each m in mit
       div 
-        h1 ciaooo
+        a(href=`/foto/${m.id}`) 
+          img(src=`${m.urls.small}`)
+        h2 #{mit.likes}  
